@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DMM版『姫麻雀』公式サイト</title>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=0,user-scalable=yes,maximum-scale=1.0">
+    <!--meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"-->
+    <meta name="keywords" content="麻雀, ま ー じ ゃ ん 無 料,雀 姬,雀魂, 麻 雀 本 格,じゃんたま, ゲーム, 麻雀闘龍, NET麻雀, Maru-Jan, 麻雀ジャンナビ, 麻雀格闘倶楽部, 国士">
+    <meta name="description" content="基本プレイ無料，横持ちと縦持ちは自由に切り替え可能，派手な演出と豊富なコレクション要素を持つ本格麻雀ゲーム">
+    <link rel="shortcut icon" href="https://oss.lingshangkaihua.com/cdn/majiangnew/img/favicon.ico">
+    <link rel="stylesheet" href="https://oss.lingshangkaihua.com/cdn/static/css/share.min.css">
+    <link rel="stylesheet" href="https://oss.lingshangkaihua.com/cdn/static/css/common.css">
+    <script type="text/javascript" src="https://oss.lingshangkaihua.com/cdn/static/js/jquery-3.4.1.min.js"></script>
+
+    <link rel="stylesheet" href="https://oss.lingshangkaihua.com/cdn/static/plugins/slider/swiper.min.css">
+    <script type="text/javascript" src="https://oss.lingshangkaihua.com/cdn/static/plugins/slider/swiper.min.js"></script>
+
+    <link rel="stylesheet" href="https://queji-jp-1259794192.file.myqcloud.com/majiang_jp_yy/css/dmmheader.css">
+    <link rel="stylesheet" href="https://queji-jp-1259794192.file.myqcloud.com/majiang_jp_yy/css/index_yy.css">
+</head>
+<style>
+    body{
+        margin: 0;
+    }
+    ::-webkit-scrollbar{
+        width: 0;
+        height: 5px;
+    }
+    .common-footer__content p a{
+        text-decoration: none;
+    }
+    .common-footer__content p a:hover{
+        text-decoration: underline;
+    }
+    .common-footer{
+        margin-top: 210px;
+    }
+</style>
+<body>
+
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-N5P9PT"  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=  '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N5P9PT');</script>
+<!-- End Google Tag Manager-->
+
+<!--head-->
+<div id="dmm_ntgnavi">
+    <ul class="navi_left">
+        <li class="dmm_top mg-l12"><a href="http://www.dmm.com/"><img src="https://www.dmm.com/images/netgame/navi/dmm_logo.gif" alt="DMM.com"></a></li>
+        <li class="ntg_top"><a href="http://www.dmm.com/netgame/"><span>DMM GAMESトップ</span></a></li>
+        <li class="ntg_poi"><a href="https://point.dmm.com/choice/pay?basket_service_type=freegame" target="_blank"><span>ポイントチャージ</span></a></li>
+    </ul>
+    <ul class="navi_right">
+        <li><a href="http://www.dmm.com/netgame/top/guide/startguide_html/=/ch_navi=/" class="arrow">初めての方</a></li>
+    </ul>
+    <div class="clear"></div>
+</div>
+<!--    end-->
+
+<div class="wrapper">
+
+<!--    banner-->
+    <div class="yy-banner-content">
+        <div class="yy-banner">
+            <img src="https://queji-jp-1259794192.file.myqcloud.com/majiang_jp_yy/css/images/bgtitle.png" alt="">
+        </div>
+        <div class="yy-banner-logo">
+            <img src="https://queji-jp-1259794192.file.myqcloud.com/majiang_jp_yy/css/images/title.png" alt="">
+        </div>
+        <div class="yy-banner-login">
+            <img onclick="yylogin()" class="yy-banner-login-img" src="https://queji-jp-1259794192.file.myqcloud.com/majiang_jp_yy/images/btnlogin.png" alt="">
+        </div>
+        <script>
+            var loginimg = document.getElementsByClassName('yy-banner-login-img')[0];
+            var loginf = document.getElementsByClassName('yy-banner-login')[0];
+            loginimg.onmouseover = function () {
+                loginimg.style.top = '-' + loginf.offsetHeight + 'px';
+            }
+            loginimg.onmouseout = function () {
+                loginimg.style.top = 0;
+            }
+            function yylogin() {
+                var date = new Date();
+                var seperator1 = "-";
+                var seperator2 = ":";
+                var month = date.getMonth() + 1;
+                var strDate = date.getDate();
+                var strHours = date.getHours();
+                var strMinutes = date.getMinutes();
+                var strSeconds = date.getSeconds();
+
+                if (month >= 1 && month <= 9) {
+                    month = "0" + month;
+                }
+                if (strDate >= 0 && strDate <= 9) {
+                    strDate = "0" + strDate;
+                }
+                if (strHours >= 0 && strHours <= 9) {
+                    strHours = "0" + strHours;
+                }
+                if (strMinutes >= 0 && strMinutes <= 9) {
+                    strMinutes = "0" + strMinutes;
+                }
+                if (strSeconds >= 0 && strSeconds <= 9) {
+                    strSeconds = "0" + strSeconds;
+                }
+
+                var currentdate = date.getFullYear() + seperator1 + month + seperator1 + strDate
+                    + " " + strHours + seperator2 + strMinutes
+                    + seperator2 + strSeconds;
+
+                var Base64 = {
+                    _keyStr: "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=",
+                    encode: function(e) {
+                        var t = "";
+                        var n, r, i, s, o, u, a;
+                        var f = 0;
+                        e = Base64._utf8_encode(e);
+                        while (f < e.length) {
+                            n = e.charCodeAt(f++);
+                            r = e.charCodeAt(f++);
+                            i = e.charCodeAt(f++);
+                            s = n >> 2;
+                            o = (n & 3) << 4 | r >> 4;
+                            u = (r & 15) << 2 | i >> 6;
+                            a = i & 63;
+                            if (isNaN(r)) {
+                                u = a = 64
+                            } else if (isNaN(i)) {
+                                a = 64
+                            }
+                            t = t + this._keyStr.charAt(s) + this._keyStr.charAt(o) + this._keyStr.charAt(u) + this._keyStr.charAt(a)
+                        }
+                        return t
+                    },
+                    decode: function(e) {
+                        var t = "";
+                        var n, r, i;
+                        var s, o, u, a;
+                        var f = 0;
+                        e=e.replace(/[^A-Za-z0-9+/=]/g,"");
+                        while (f < e.length) {
+                            s = this._keyStr.indexOf(e.charAt(f++));
+                            o = this._keyStr.indexOf(e.charAt(f++));
+                            u = this._keyStr.indexOf(e.charAt(f++));
+                            a = this._keyStr.indexOf(e.charAt(f++));
+                            n = s << 2 | o >> 4;
+                            r = (o & 15) << 4 | u >> 2;
+                            i = (u & 3) << 6 | a;
+                            t = t + String.fromCharCode(n);
+                            if (u != 64) {
+                                t = t + String.fromCharCode(r)
+                            }
+                            if (a != 64) {
+                                t = t + String.fromCharCode(i)
+                            }
+                        }
+                        t = Base64._utf8_decode(t);
+                        return t
+                    },
+                    _utf8_encode: function(e) {
+                        e = e.replace(/rn/g, "n");
+                        var t = "";
+                        for (var n = 0; n < e.length; n++) {
+                            var r = e.charCodeAt(n);
+                            if (r < 128) {
+                                t += String.fromCharCode(r)
+                            } else if (r > 127 && r < 2048) {
+                                t += String.fromCharCode(r >> 6 | 192);
+                                t += String.fromCharCode(r & 63 | 128)
+                            } else {
+                                t += String.fromCharCode(r >> 12 | 224);
+                                t += String.fromCharCode(r >> 6 & 63 | 128);
+                                t += String.fromCharCode(r & 63 | 128)
+                            }
+                        }
+                        return t
+                    },
+                    _utf8_decode: function(e) {
+                        var t = "";
+                        var n = 0;
+                        var r = c1 = c2 = 0;
+                        while (n < e.length) {
+                            r = e.charCodeAt(n);
+                            if (r < 128) {
+                                t += String.fromCharCode(r);
+                                n++
+                            } else if (r > 191 && r < 224) {
+                                c2 = e.charCodeAt(n + 1);
+                                t += String.fromCharCode((r & 31) << 6 | c2 & 63);
+                                n += 2
+                            } else {
+                                c2 = e.charCodeAt(n + 1);
+                                c3 = e.charCodeAt(n + 2);
+                                t += String.fromCharCode((r & 15) << 12 | (c2 & 63) << 6 | c3 & 63);
+                                n += 3
+                            }
+                        }
+                        return t
+                    }
+                };
+                location.href = 'http://www.dmm.com/netgame/channeling/-/login/index/?p=' + Base64.encode(
+                    'transaction_id=00607547650000000000000000000001' +
+                    '&dmm_app_id=0060754765' +
+                    '&token=1ae86280b6782957a6031676912a4b015da9d1e7' +
+                    '&callback_url=http://www.himemj.jp/dmmcallback/' +
+                    '&finishpage_url=http://www.himemj.jp/registered/' +
+                    '&request_time=' + currentdate
+                )
+
+                //开始游戏的接口
+                // $.ajax({
+                //     url: "http://120.78.58.131:9114/game_player/loginDmmGame",
+                //     success: function (data) {
+                //         location.href = data;
+                //     },
+                //     dataType: 'text'
+                // });
+            }
+        </script>
+        <div class="yy-banner-inform">
+            <img src="https://queji-jp-1259794192.file.myqcloud.com/majiang_jp_yy/css/images/intro.png" alt="">
+        </div>
+    </div>
+<!--    banner end-->
+
+<!--    reward-->
+    <div class="yy-reward">
+        <div class="re-bgbody">
+            <div class="re-bgbody-head">
+                <img src="https://queji-jp-1259794192.file.myqcloud.com/majiang_jp_yy/css/images/titleofprizes.png" alt="">
+            </div>
+            <div class="re-bgbody-photo">
+                <img src="https://queji-jp-1259794192.file.myqcloud.com/majiang_jp_yy/images/chara2.png" alt="">
+                <img src="https://queji-jp-1259794192.file.myqcloud.com/majiang_jp_yy/images/chara1.png" alt="">
+            </div>
+            <div class="re-body-reward">
+                <dl>
+                    <dt><img src="https://queji-jp-1259794192.file.myqcloud.com/majiang_jp_yy/images/1000users-c.png" alt=""></dt>
+                    <dt><img src="https://queji-jp-1259794192.file.myqcloud.com/majiang_jp_yy/images/3000users-c.png" alt=""></dt>
+                    <dt><img src="https://queji-jp-1259794192.file.myqcloud.com/majiang_jp_yy/images/5000users-c.png" alt=""></dt>
+                    <dt><img src="https://queji-jp-1259794192.file.myqcloud.com/majiang_jp_yy/images/8000users-c.png" alt=""></dt>
+                    <dt><img src="https://queji-jp-1259794192.file.myqcloud.com/majiang_jp_yy/images/10000users-c.png" alt=""></dt>
+                </dl>
+                <div class="re-body-care">
+                    <img src="https://queji-jp-1259794192.file.myqcloud.com/majiang_jp_yy/images/caution.png" alt="">
+                </div>
+            </div>
+            <div class="re-body-login">
+                <img onclick="yylogin()" class="re-body-loginimg" src="https://queji-jp-1259794192.file.myqcloud.com/majiang_jp_yy/images/btnlogin2.png" alt="">
+            </div>
+            <div class="re-body-back">
+                <a target="_blank" href="http://www.himemj.jp/">
+                    <img class="re-body-backimg" src="https://queji-jp-1259794192.file.myqcloud.com/majiang_jp_yy/images/btnsite.png" alt="">
+                </a>
+            </div>
+            <script>
+                var rbloginf = document.getElementsByClassName('re-body-back')[0];
+                var rbloginimg = document.getElementsByClassName('re-body-backimg')[0];
+                var rloginf = document.getElementsByClassName('re-body-login')[0];
+                var rloginimg = document.getElementsByClassName('re-body-loginimg')[0];
+                window.onload = function () {
+
+                    rbloginf.style.height = rbloginimg.offsetHeight/2 + 'px';
+                    rbloginimg.onmouseover = function () {
+                        rbloginimg.style.top = '-' + rbloginimg.offsetHeight/2 + 'px';
+                    };
+                    rbloginimg.onmouseout = function () {
+                        rbloginimg.style.top = 0;
+                    };
+
+                    rloginf.style.height = rloginimg.offsetHeight/2 + 'px';
+                    rloginimg.onmouseover = function () {
+                        rloginimg.style.top = '-' + rloginimg.offsetHeight/2 + 'px';
+                    };
+                    rloginimg.onmouseout = function () {
+                        rloginimg.style.top = 0;
+                    }
+                    var docWidth = document.body.clientWidth;
+                    document.getElementsByClassName('re-bgbody-photo')[0].style.width = docWidth + 'px';
+                };
+                window.onresize = function () {
+                    var docWidth = document.body.clientWidth;
+                    document.getElementsByClassName('re-bgbody-photo')[0].style.width = docWidth + 'px';
+                    var a = Math.floor(rbloginimg.offsetHeight)/2 -1;
+                    var b = Math.floor(rloginimg.offsetHeight)/2 -1;
+                    rbloginf.style.height = a + 'px';
+                    rloginf.style.height = b + 'px';
+                }
+            </script>
+        </div>
+    </div>
+<!--    reward end-->
+
+    <div class="common-footer">
+        <div class="common-footer__left">
+            <img src="http://queji-jp-1259794192.file.myqcloud.com/majiang_jp_yy/images/smiletech.png">
+        </div>
+        <div class="common-footer__right">
+            <div class="common-footer__share">
+                <a target="_blank" class="common-footer__share-icon icon-twitter" href="https://twitter.com/hime_mahjong"></a>
+                <a class="common-footer__share-icon icon-facebook" href="https://www.facebook.com/himemahjong/" target="_blank"></a>
+                <a class="common-footer__share-icon icon-email" href="mailto:support@himemj.jp"></a>
+            </div>
+            <div class="common-footer__content">
+                <p>
+                    <a target="_blank" href="http://www.himemj.jp/contact">お問い合わせ</a>
+                    |
+                    <a target="_blank" href="http://www.himemj.jp/privacy">プライバシーポリシー</a>
+                    |
+                    <a target="_blank" href="http://www.himemj.jp/term">利用規約</a>
+                </p>
+                <p>
+                    <a target="_blank" href="http://www.himemj.jp/commerce">特定商法取引法に基づく表記</a>
+                    |
+                    <a target="_blank" href="http://www.himemj.jp/payment">資金決済法に基づく表記</a>
+                </p>
+                <p>©SmileTech Inc. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DMM版『姫麻雀』公式サイト</title>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=0,user-scalable=yes,maximum-scale=1.0">
+    <!--meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"-->
+    <meta name="keywords" content="麻雀, ま ー じ ゃ ん 無 料,雀 姬,雀魂, 麻 雀 本 格,じゃんたま, ゲーム, 麻雀闘龍, NET麻雀, Maru-Jan, 麻雀ジャンナビ, 麻雀格闘倶楽部, 国士">
+    <meta name="description" content="基本プレイ無料，横持ちと縦持ちは自由に切り替え可能，派手な演出と豊富なコレクション要素を持つ本格麻雀ゲーム">
+    <link rel="shortcut icon" href="https://oss.lingshangkaihua.com/cdn/majiangnew/img/favicon.ico">
+    <link rel="stylesheet" href="https://oss.lingshangkaihua.com/cdn/static/css/share.min.css">
+    <link rel="stylesheet" href="https://oss.lingshangkaihua.com/cdn/static/css/common.css">
+    <script type="text/javascript" src="https://oss.lingshangkaihua.com/cdn/static/js/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="https://oss.lingshangkaihua.com/cdn/static/plugins/slider/swiper.min.css">
+    <script type="text/javascript" src="https://oss.lingshangkaihua.com/cdn/static/plugins/slider/swiper.min.js"></script>
+    <link rel="stylesheet" href="https://queji-jp-1259794192.file.myqcloud.com/majiang_jp_yy/css/dmmheader.css">
+    <link rel="stylesheet" href="https://queji-jp-1259794192.file.myqcloud.com/majiang_jp_yy/css/index_startgame_jp.css">
+    <script type="text/javascript" src="https://queji-jp-1259794192.file.myqcloud.com/majiang_jp_yy/js/index_startgame.js"></script>
+</head>
+<style>
+    body{
+        margin: 0;
+    }
+    ::-webkit-scrollbar{
+        width: 0;
+        height: 5px;
+    }
+    .common-footer__content p a{
+        text-decoration: none;
+    }
+    .common-footer__content p a:hover{
+        text-decoration: underline;
+    }
+</style>
+<body>
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-N5P9PT"  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=  '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N5P9PT');</script>
+<!-- End Google Tag Manager-->
+<!--head-->
+<div id="dmm_ntgnavi">
+    <ul class="navi_left">
+        <li class="dmm_top mg-l12"><a href="http://www.dmm.com/"><img src="https://www.dmm.com/images/netgame/navi/dmm_logo.gif" alt="DMM.com"></a></li>
+        <li class="ntg_top"><a href="http://www.dmm.com/netgame/"><span>DMM GAMESトップ</span></a></li>
+        <li class="ntg_poi"><a href="https://point.dmm.com/choice/pay?basket_service_type=freegame" target="_blank"><span>ポイントチャージ</span></a></li>
+    </ul>
+    <ul class="navi_right">
+        <li><a href="http://www.dmm.com/netgame/top/guide/startguide_html/=/ch_navi=/" class="arrow">初めての方</a></li>
+    </ul>
+    <div class="clear"></div>
+</div>
+<!--    end-->
+<div class="wrapper">
+    <!--    banner-->
+    <div class="yy-banner-content">
+        <div class="yy-banner">
+            <img src="https://queji-jp-1259794192.file.myqcloud.com/majiang_jp_yy/css/images/bg1.png" alt="">
+        </div>
+        <div class="yy-banner-logo">
+            <img src="https://queji-jp-1259794192.file.myqcloud.com/majiang_jp_yy/images/mjweb-header-logo-jp.png" alt="">
+            <img src="https://queji-jp-1259794192.file.myqcloud.com/majiang_jp_yy/images/slogan.png" alt="">
+        </div>
+        <div class="yy-banner-login">
+            <img onclick="yylogin()" class="yy-banner-login-img" src="https://queji-jp-1259794192.file.myqcloud.com/majiang_jp_yy/images/button.png" alt="">
+        </div>
+        <script>
+            var loginimg = document.getElementsByClassName('yy-banner-login-img')[0];
+            var loginf = document.getElementsByClassName('yy-banner-login')[0];
+            loginimg.onmouseover = function () {
+                loginimg.style.top = '-' + loginf.offsetHeight + 'px';
+            };
+            loginimg.onmouseout = function () {
+                loginimg.style.top = 0;
+            };
+            function yylogin() {
+                //开始游戏的接口
+                $.ajax({
+                    url: "http://120.78.58.131:9114/game_player/loginDmmGame",
+                    success: function (data) {
+                        location.href = data;
+                    },
+                    dataType: 'text'
+                });
+            }
+        </script>
+    </div>
+    <!--    banner end-->
+    <!--body-->
+    <div id="mjweb_body">
+        <div class="mbody_title">
+            <p class="mbody_title1">
+                【ニュース】
+            </p>
+            <p class="mbody_title2">
+                【雀士】
+            </p>
+            <div class="mbody_line"></div>
+            <div class="mbody_content">
+                <div class="mbody_cnews">
+
+                </div>
+                <div class="mbody_cperson">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div>
+                                    <img src="https://queji-jp-1259794192.file.myqcloud.com/majiang_jp_yy/images/c1.png" alt="">
+                                </div>
+                                <p class="c-nick">女将</p>
+                                <p class="c-name">CV : 佐藤 利奈</p>
+                                <div></div>
+                                <p class="c-content">
+                                    大人の魅力に溢れる。ずぼらでいたずら好き。食いしん坊。打牌（だはい）のマナーが悪い。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-left">
+
+                    </div>
+                    <div class="c-right">
+                        <img src="https://queji-jp-1259794192.file.myqcloud.com/majiang_jp_yy/css/images/chara_switcharrow_right.png" alt="">
+                    </div>
+                </div>
+                <div style="width: 100%;background: black;height: 2px;position: absolute;bottom: 0"></div>
+            </div>
+        </div>
+    </div>
+    <div class="myweb-OS">
+        <img src="https://queji-jp-1259794192.file.myqcloud.com/majiang_jp_yy/images/OS.png" alt="">
+    </div>
+    <!--end-->
+    <div class="common-footer">
+        <div class="common-footer__left">
+            <img src="http://queji-jp-1259794192.file.myqcloud.com/majiang_jp_yy/images/smiletech.png" alt="">
+        </div>
+        <div class="common-footer__right">
+            <div class="common-footer__share">
+                <a target="_blank" class="common-footer__share-icon icon-twitter" href="https://twitter.com/hime_mahjong"></a>
+                <a class="common-footer__share-icon icon-facebook" href="https://www.facebook.com/himemahjong/" target="_blank"></a>
+                <a class="common-footer__share-icon icon-email" href="mailto:support@himemj.jp"></a>
+            </div>
+            <div class="common-footer__content">
+                <p>
+                    <a target="_blank" href="http://www.himemj.jp/contact">お問い合わせ</a>
+                    |
+                    <a target="_blank" href="http://www.himemj.jp/privacy">プライバシーポリシー</a>
+                    |
+                    <a target="_blank" href="http://www.himemj.jp/term">利用規約</a>
+                </p>
+                <p>
+                    <a target="_blank" href="http://www.himemj.jp/commerce">特定商法取引法に基づく表記</a>
+                    |
+                    <a target="_blank" href="http://www.himemj.jp/payment">資金決済法に基づく表記</a>
+                </p>
+                <p>©SmileTech Inc. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="news">
+
+</div>
+</body>
+</html>
