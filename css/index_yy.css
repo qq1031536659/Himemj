@@ -1,0 +1,123 @@
+.yy-banner{
+    width: 100%;
+}
+.yy-banner img{
+    width: 100%;
+}
+.yy-banner-content{
+    position: relative;
+}
+.yy-banner-logo{
+    position: absolute;
+    top: 10%;
+    width: 100%;
+}
+.yy-banner-logo img{
+    position: absolute;
+    left: 53%;
+    width: 37%;
+}
+.yy-banner-login{
+    position: absolute;
+    top: 61%;
+    width: 100%;
+    height: 13.4%;
+    overflow: hidden;
+
+}
+.yy-banner-login img{
+    position: absolute;
+    left: 58%;
+    width: 28%;
+}
+.yy-banner-login img:hover{
+    cursor: pointer;
+}
+.yy-banner-inform{
+    width: 100%;
+    margin-top: -13px;
+    margin-left: -1px;
+}
+.yy-banner-inform img{
+    width: 100%;
+}
+.yy-reward{
+    position: relative;
+    height: 100%;
+}
+.re-bgbody{
+    background: url("https://queji-jp-1259794192.file.myqcloud.com/majiang_jp_yy/css/images/bgbody.png") no-repeat center top;
+    width: 100%;
+    text-align: center;
+    margin-top: -67px;
+    height: 100%;
+}
+.re-bgbody-head{
+    padding-top: 7%;
+    text-align: center;
+}
+.re-bgbody-photo{
+    width: 100%;
+    position: absolute;
+    z-index: 1000;
+}
+.re-bgbody-photo img:nth-of-type(1){
+    width: 55%;
+    float: left;
+    padding-top: 86px;
+}
+.re-bgbody-photo img:nth-of-type(2){
+    width: 39.5%;
+    float: right;
+    margin-right: 1%;
+    padding-top: 34px;
+}
+.re-body-reward{
+    position: relative;
+    z-index: 1300;
+    text-align: center;
+}
+.re-body-reward dl dt img{
+    width: 45%;
+    padding-bottom: 5px;
+}
+.re-body-reward dl dt:nth-of-type(5) img{
+    width: 47.5%;
+    padding-left: 41px;
+}
+.re-body-care img{
+    width: 37%;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+.re-body-login{
+    text-align: left;
+    position: relative;
+    margin: 0 auto;
+    width: 28%;
+    height: 13.4%;
+    overflow: hidden;
+}
+.re-body-loginimg{
+    position: absolute;
+    width: 100%;
+}
+.re-body-loginimg:hover{
+    cursor: pointer;
+}
+.re-body-back{
+    text-align: left;
+    position: relative;
+    margin: 40px auto;
+    width: 22%;
+    height: 13.4%;
+    overflow: hidden;
+}
+.re-body-backimg{
+    position: absolute;
+    width: 100%;
+}
+.re-body-backimg:hover{
+    cursor: pointer;
+}
+
