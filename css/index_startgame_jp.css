@@ -1,0 +1,291 @@
+.yy-banner{
+    width: 100%;
+}
+.yy-banner img{
+    width: 100%;
+}
+.yy-banner-content{
+    position: relative;
+}
+.yy-banner-logo{
+    position: absolute;
+    top: 10%;
+    width: 100%;
+}
+.yy-banner-logo img:nth-of-type(1){
+    position: absolute;
+    left: 61%;
+    width: 16%;
+}
+.yy-banner-logo img:nth-of-type(2){
+    position: absolute;
+    margin-top: 11%;
+    left: 53%;
+    width: 37%;
+}
+.yy-banner-login{
+    position: absolute;
+    top: 70%;
+    width: 100%;
+    height: 16.5%;
+    overflow: hidden;
+}
+.yy-banner-login img{
+    position: absolute;
+    left: 58%;
+    width: 28%;
+}
+.yy-banner-login img:hover{
+    cursor: pointer;
+}
+.yy-banner-inform{
+    width: 100%;
+    margin-top: -13px;
+    margin-left: -1px;
+}
+.yy-banner-inform img{
+    width: 100%;
+}
+/*body*/
+#mjweb_body{
+    margin-top: -5px;
+    background: url("https://queji-jp-1259794192.file.myqcloud.com/majiang_jp_yy/css/images/bg2.png") no-repeat center top;
+    background-size: 100%;
+}
+.mbody_title{
+    width: 1300px;
+    margin: 0 auto;
+}
+.mbody_title1,
+.mbody_title2{
+    margin: 0;
+    font-size: 40px;
+    color: #ffeecb;
+    display: table-cell;
+}
+.mbody_title1{
+    width: 480px;
+}
+.mbody_title2{
+    width: 820px;
+}
+.mbody_line{
+    background: #ffeecb;
+    height: 3px;
+    width: 1260px;
+    margin: 20px auto 50px auto;
+}
+.mbody_content{
+    margin-left: 20px;
+    position: relative;
+}
+.mbody_cnews{
+    width: 460px;
+    display: table-cell;
+    height: 645px;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    overflow : auto;
+    -webkit-box-orient: vertical;
+}
+.mbody_cnews::-webkit-scrollbar {/*滚动条整体样式*/
+    width: 7px;     /*高宽分别对应横竖滚动条的尺寸*/
+    height: 1px;
+}
+.mbody_cnews::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+    background: white;
+}
+.mbody_cnews::-webkit-scrollbar-track-piece{/*滚动里面轨道部分*/
+    background: rgba(255,255,255,0.4);
+}
+.mbody_cnewscontent{
+    width: 365px;
+    margin-right: 20px;
+    height: 155px;
+    background: url("https://queji-jp-1259794192.file.myqcloud.com/majiang_jp_yy/css/images/news.png");
+    background-size: 100%;
+    margin-bottom: 20px;
+    cursor: pointer;
+    color: #ffeecb;
+    padding: 20px 25px 20px 20px;
+}
+.mbody_cnewscontent:hover{
+    background-position-y: -195px;
+}
+.mbody_cnewscontent div:nth-of-type(1){
+    margin-top: 10px;
+    height: 21px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ffeecb;
+    margin-bottom: 20px;
+}
+.mbody_cnewscontent div:nth-of-type(1) span:nth-of-type(1){
+    float: left;
+}
+.mbody_cnewscontent div:nth-of-type(1) span:nth-of-type(2){
+    float: right;
+}
+.mbody_cnewscontent div:nth-of-type(2){
+    line-height: 28px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    word-break: break-all;
+}
+.mbody_cperson{
+    padding-left: 30px;
+    width: 800px;
+    height: 645px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.swiper-slide{
+    color: #ffeecb;
+    position: relative;
+}
+.swiper-slide div:nth-of-type(1){
+    height: 645px;
+    float: left;
+    width: 410px;
+    text-align: center;
+    background: none;
+    margin-right: 0;
+}
+.c-nick{
+    width: 367px;
+    float: right;
+    color: #fdd468;
+    font-size: 55px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.c-name{
+    width: 367px;
+    float: right;
+    color: #ffeecb;
+    font-size: 30px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.swiper-slide div {
+    width: 348px;
+    float: right;
+    height: 3px;
+    background: #ffeecb;
+    margin-right: 19px;
+}
+.c-content{
+    width: 367px;
+    float: right;
+    color: #ffeecb;
+    margin-top: 50px;
+    font-size: 25px;
+    line-height: 40px;
+    height: 400px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 10;
+    overflow: hidden;
+}
+.c-left{
+    position: absolute;
+    left: 66px;
+    top: 40%;
+    transform: translate(-50%);
+    width: 52px;
+    height: 76px;
+    overflow: auto;
+    z-index: 5000;
+    cursor: pointer;
+    outline: none;
+    background: url("https://queji-jp-1259794192.file.myqcloud.com/majiang_jp_yy/css/images/chara_switcharrow_left.png");
+}
+.c-right{
+    position: absolute;
+    right: -70px;
+    top: 40%;
+    transform: translate(-50%);
+    width: 52px;
+    height: 76px;
+    overflow: auto;
+    z-index: 5000;
+    cursor: pointer;
+    outline: none;
+    background: url("https://queji-jp-1259794192.file.myqcloud.com/majiang_jp_yy/css/images/chara_switcharrow_right.png");
+}
+.c-left:hover,
+.c-right:hover{
+    background-position: 0 -76px;
+}
+.myweb-OS{
+    margin: 100px 0 200px 0;
+    text-align: center;
+}
+/*end*/
+/*mescontent*/
+.newscontent{
+    padding: 40px 40px;
+    width: 620px;
+    height: 520px;
+    background: url("https://queji-jp-1259794192.file.myqcloud.com/majiang_jp_yy/css/images/mjweb_article.png") no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #ffeecb;
+}
+#news{
+    display: none;
+    background: darkgray;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(255,255,255,0.4);
+    z-index: 30000;
+    width: 100%;
+    height: 100%;
+}
+.closene{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background: url("https://queji-jp-1259794192.file.myqcloud.com/majiang_jp_yy/css/images/mjweb_close.png") no-repeat;
+}
+.closene:hover{
+    cursor: pointer;
+    background-position-y: -30px;
+}
+.news_c{
+    padding: 0 10px;
+    text-align: left;
+    height: 418px;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    overflow : auto;
+    -webkit-box-orient: vertical;
+}
+.news_c::-webkit-scrollbar {/*滚动条整体样式*/
+    width: 7px;     /*高宽分别对应横竖滚动条的尺寸*/
+    height: 1px;
+}
+.news_c::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+    background: white;
+}
+.news_c::-webkit-scrollbar-track-piece{/*滚动里面轨道部分*/
+    background: rgba(255,255,255,0.4);
+}
+.newscontent div:nth-of-type(1){
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+.newscontent div:nth-of-type(2){
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ffeecb;
+    margin-bottom: 30px;
+}
