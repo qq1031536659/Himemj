@@ -36,6 +36,16 @@
     .common-footer{
         margin-top: 210px;
     }
+    .yy-banner-end{
+        position: absolute;
+        top: 75%;
+        left: 58.5%;
+        font-size: 1vw;
+        font-family: "Adobe 楷体 Std R";
+        font-weight: bold;
+        text-shadow: 0 0 5px pink;
+        text-align: center;
+    }
 </style>
 <body>
 
@@ -71,7 +81,10 @@
             <img src="https://queji-jp-1259794192.file.myqcloud.com/majiang_jp_yy/css/images/title.png" alt="">
         </div>
         <div class="yy-banner-login">
-            <img onclick="yylogin()" class="yy-banner-login-img" src="https://queji-jp-1259794192.file.myqcloud.com/majiang_jp_yy/images/btnlogin.png" alt="">
+            <img class="yy-banner-login-img" src="https://queji-jp-1259794192.file.myqcloud.com/majiang_jp_yy/images/btnlogin.png" alt="">
+        </div>
+        <div class="yy-banner-end">
+            <span>DMM版は2019年12月4日11時より配信予定でございます。</span>
         </div>
         <script>
             var loginimg = document.getElementsByClassName('yy-banner-login-img')[0];
@@ -210,15 +223,6 @@
                     '&finishpage_url=http://www.himemj.jp/registered/' +
                     '&request_time=' + currentdate
                 )
-
-                //开始游戏的接口
-                // $.ajax({
-                //     url: "http://120.78.58.131:9114/game_player/loginDmmGame",
-                //     success: function (data) {
-                //         location.href = data;
-                //     },
-                //     dataType: 'text'
-                // });
             }
         </script>
         <div class="yy-banner-inform">

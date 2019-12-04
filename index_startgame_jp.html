@@ -16,7 +16,9 @@
     <script type="text/javascript" src="https://oss.lingshangkaihua.com/cdn/static/plugins/slider/swiper.min.js"></script>
     <link rel="stylesheet" href="https://queji-jp-1259794192.file.myqcloud.com/majiang_jp_yy/css/dmmheader.css">
     <link rel="stylesheet" href="https://queji-jp-1259794192.file.myqcloud.com/majiang_jp_yy/css/index_startgame_jp.css">
-    <script type="text/javascript" src="https://queji-jp-1259794192.file.myqcloud.com/majiang_jp_yy/js/index_startgame.js"></script>
+<!--    <link rel="stylesheet" href="index_startgame_jp.css">-->
+    <script type="text/javascript" src="https://queji-jp-1259794192.file.myqcloud.com/majiang_jp_yy/js/index_startgame_jp.js"></script>
+<!--    <script type="text/javascript" src="index_startgame_jp.js"></script>-->
 </head>
 <style>
     body{
@@ -31,6 +33,13 @@
     }
     .common-footer__content p a:hover{
         text-decoration: underline;
+    }
+    .myweb-OS{
+        width: 27%;
+        left: 58.5%;
+    }
+    .myweb-OS img{
+        width: 100%;
     }
 </style>
 <body>
@@ -66,6 +75,9 @@
         <div class="yy-banner-login">
             <img onclick="yylogin()" class="yy-banner-login-img" src="https://queji-jp-1259794192.file.myqcloud.com/majiang_jp_yy/images/button.png" alt="">
         </div>
+        <div class="myweb-OS">
+            <img src="https://queji-jp-1259794192.file.myqcloud.com/majiang_jp_yy/images/OS.png" alt="">
+        </div>
         <script>
             var loginimg = document.getElementsByClassName('yy-banner-login-img')[0];
             var loginf = document.getElementsByClassName('yy-banner-login')[0];
@@ -78,7 +90,7 @@
             function yylogin() {
                 //开始游戏的接口
                 $.ajax({
-                    url: "http://120.78.58.131:9114/game_player/loginDmmGame",
+                    url: "https://l1-qj-prod_game.lingshangkaihua.com/game_player/loginDmmGame",
                     success: function (data) {
                         location.href = data;
                     },
@@ -129,9 +141,7 @@
             </div>
         </div>
     </div>
-    <div class="myweb-OS">
-        <img src="https://queji-jp-1259794192.file.myqcloud.com/majiang_jp_yy/images/OS.png" alt="">
-    </div>
+
     <!--end-->
     <div class="common-footer">
         <div class="common-footer__left">
@@ -164,5 +174,52 @@
 <div id="news">
 
 </div>
+<script>
+    $(function () {
+        var newscontent = [
+            {
+                title : '【DMM版配信予定】',
+                date : '2019-12-4',
+                content : '『姫麻雀』DMM版は2019年12月4日11時より配信予定でございます。<br/>' +
+                    '配信開始まで残りわずか、ぜひお楽しみに！'
+            },{
+                title : '【DMM版好評配信中】',
+                date : '2019-12-4',
+                content : 'DMMにてブラウザ版『姫麻雀』を配信中！アプリ版と同じバージョンですがDMMアカウントでのみプレイ可能です。<br/>' +
+                    'また、小判、雀士「佐々木紗夜」、水墨のエフェクト、新春猫の手袋などを含む事前登録特典を配布中！ぜひご利用ください！<br/>' +
+                        '※アプリ版の引継ぎはできません'
+            }
+        ]
+        for (var i = 0 ; i < newscontent.length ; i++){
+            var content = '<div class="mbody_cnewscontent">' +
+                '                        <div>' +
+                '                            <span>' + newscontent[i].title + '</span>' +
+                '                            <span>' + newscontent[i].date + '</span>' +
+                '                        </div>' +
+                '                        <div>' + newscontent[i].content +
+                '                        </div>' +
+                '                    </div>';
+            $('.mbody_cnews').append(content);
+        }
+        $('.mbody_cnewscontent').on('click',function (e) {
+            var a = document.getElementById('news');
+            a.style.display = 'block';
+            document.body.style.overflow = 'hidden';// 通过overflow来禁用滚动条滑动
+            var content = '<div class="newscontent">' +
+                '        <span style="cursor: pointer" class="closene"></span>' +
+                '        <div>' + newscontent[$(this).index()].title + '</div>' +
+                '        <div>' + newscontent[$(this).index()].date + '</div>' +
+                '        <div class="news_c">' + newscontent[$(this).index()].content +
+                '        </div>' +
+                '    </div>';
+            a.innerHTML = content;
+            $('.closene').on('click',function (e) {
+                var a = document.getElementById('news');
+                a.style.display = 'none';
+                document.body.style.overflow = 'visible';
+            })
+        });
+    })
+</script>
 </body>
 </html>
